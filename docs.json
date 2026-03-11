@@ -88,6 +88,12 @@
         "pages": [
           "untitled-page"
         ]
+      },
+      {
+        "tab": "Customer Expansion Analysis",
+        "pages": [
+          "glean"
+        ]
       }
     ]
   },
