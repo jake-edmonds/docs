@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Jake's Take Home Assignment",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#8B2500",
+    "light": "#C9A84C",
+    "dark": "#2C4A3E"
   },
   "favicon": "/favicon.svg",
   "navigation": {
