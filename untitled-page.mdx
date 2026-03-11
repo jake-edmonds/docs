@@ -1,0 +1,134 @@
+---
+title: "Enterprise CSM Take-Home Assignment"
+description: "Metrics, expansion strategy, churn prevention, and cross-functional collaboration — Jake Edmonds, March 2026"
+sidebarTitle: "CSM Take-Home"
+icon: "chart-line"
+---
+
+Covering four areas: CS function health metrics, expansion levers, stickiest features and churn prevention, and managing engineering resources against enterprise feature urgency.
+
+## 1. Metrics & KPIs
+
+Below are the most meaningful metrics across three areas: CS function health, customer product health, and feature prioritization.
+
+### Customer Success as a Function
+
+These KPIs measure whether the CS team is moving the business needle — not just doing activity.
+
+| Metric | Why it matters for Mintlify |
+|--------|----------------------------|
+| **Net & Gross Revenue Retention (NRR / GRR)** | NRR captures the full picture of CS impact — expansion through AI credits, use case growth, and support upgrades — while GRR isolates pure churn to understand raw retention health. Together they tell the story of both momentum and risk. |
+| **Time-to-First-Value (TTFV)** | Speed from contract close to a customer publishing their first doc or enabling the Mintlify Agent. Onboarding is crucial; slow activation is a reliable predictor of churn. |
+| **CS-Sourced Expansion ARR** | What % of upgrades and upsells were influenced by CS touchpoints vs. self-serve? Helps demonstrate team ROI. |
+
+### Customer Health for Mintlify's Product
+
+Mintlify's health signals span both the customer's internal team (doc authors) and their end users (developers reading the docs). A healthy customer shows engagement on both sides.
+
+| Health Signal | What it tells us |
+|---------------|-----------------|
+| **Mintlify Agent Adoption** | Is the customer using this feature? Customers who have configured the Agent with AGENTS.md and integrated it into their GitHub workflow have deep product entrenchment — and are getting the most value. |
+| **AI Assistant Query Volume & Resolution Rate** | Rising query volume signals a growing developer community engaging with the docs. High resolution rate means the docs are actually good. Low resolution rate — combined with rising support tickets — is a clear intervention trigger. |
+| **Active Authors** | Are editors actively using the platform? Low editor engagement suggests the documentation workflow hasn't been embedded into the team's habits. |
+| **GitHub Integration Activity** | Commit frequency and PR volume for docs updates. Strong Git activity means docs-as-code is working; low activity suggests the team reverted to ad-hoc editing. |
+| **Workflows Configured** | Customers who have set up automated changelog generation or style audit workflows have meaningfully invested in the platform — a reliable leading indicator of long-term retention. |
+| **Page Views, Click-Through Rates & Developer Traffic Trends** | Is the documentation being read and acted on? Declining traffic or low CTR often precedes ROI complaints — or signals that content isn't surfacing what developers need. |
+
+### Feature Request Prioritization
+
+Not all feature requests are equal. The goal is a framework that surfaces the highest-leverage opportunities for engineering — not a first-come, first-served list.
+
+| Signal | How to use it |
+|--------|--------------|
+| **Request Frequency × ACV Weight** | A feature requested by 10 customers at $5K ACV is different from one requested by 2 customers at $50K ACV. Both matter, but differently — weight by total revenue impact. |
+| **Churn Correlation** | Which missing features were cited in churn conversations? These represent gaps in Mintlify's core value prop and carry the highest urgency. |
+| **Expansion Blocker vs. Nice-to-Have** | Is this request blocking an upsell or renewal? Features on the critical path of a pending enterprise deal deserve explicit prioritization flags from CS. |
+
+---
+
+## 2. Expansion Levers
+
+Mintlify's pricing creates several distinct expansion paths. The best CS motion targets them systematically rather than reactively.
+
+### The Primary Expansion Levers
+
+- **AI credit consumption growth:** As customers deepen adoption of the AI Assistant and Mintlify Agent — adding more documentation, enabling Workflows, and growing their developer user base — AI credit usage scales naturally. This is Mintlify's most organic expansion vector: value-correlated and largely self-driven once customers are fully activated.
+
+- **Use case expansion:** Customers typically start with Developer Documentation, but Mintlify supports three distinct surfaces: Developer Docs, internal Knowledge Base, and Help Center. Expanding into a second or third use case can create a meaningful expansion in AI credits used.
+
+- **Additional services:** For enterprise accounts, expanded support tiers — including dedicated Slack channels and 24/7 incident monitoring — represent both a revenue opportunity and a relationship-deepening motion. Customers facing compliance requirements or running mission-critical documentation infrastructure have strong appetite for these, and they increase switching costs meaningfully.
+
+### Systematically Driving Expansion
+
+Expansion requires a structured motion embedded into the customer lifecycle — not opportunistic conversations whenever a renewal comes up.
+
+**Segment by Expansion Potential at Onboarding**
+
+Map every account against a simple expansion scorecard: current plan, AI credit usage trends, use cases deployed, developer traffic growth, and industry vertical. This creates a tiered book prioritized by potential, not just current ACV.
+
+**Define Adoption Milestones Tied to Credit and Service Expansion**
+
+Set specific milestones that signal a customer is ready for the next expansion conversation, with a focus on AI usage and service upgrades:
+
+<Steps>
+  <Step title="Activated">
+    Agent configured and first automated PR merged. Introduce Workflows and begin monitoring AI credit consumption rate.
+  </Step>
+  <Step title="Scaling AI Usage">
+    AI query volume growing month-over-month and nearing plan limits. Proactive conversation about credit tier upgrade before the customer hits an overage wall.
+  </Step>
+  <Step title="Mission-Critical">
+    Docs are core to the customer's developer experience and/or internal operations. Introduce 24/7 incident monitoring and dedicated Slack support as risk management, not just a premium.
+  </Step>
+</Steps>
+
+---
+
+## 3. Stickiest Features & Churn Prevention
+
+The stickiest Mintlify features are those embedded in a customer's engineering workflow — not just things the team visits occasionally. Each of the features below creates meaningful switching costs, and the churn prevention motion follows directly from how that stickiness is built.
+
+<AccordionGroup>
+  <Accordion title="Git-Based Docs-as-Code Workflow">
+    When a customer's documentation lives in their GitHub repository as MDX files — with CI/CD pipelines, PR review processes, custom components, and full version history — migration becomes a genuine project, not a tool swap. This isn't switching software; it's reorganizing how the team ships documentation. Customers like Vercel or Perplexity who have invested in this structure have high switching costs.
+
+    **Churn prevention:** Ensure every customer completes a docs-as-code health check within 90 days — is the repo structured correctly, are PRs being used for content review, is the GitHub App installed? Customers with messy setups are more likely to churn.
+  </Accordion>
+
+  <Accordion title="Mintlify Agent + Workflows Configuration">
+    Customers who have written an AGENTS.md file, configured Workflows triggers, and customized their documentation automation have invested institutional knowledge into the platform. This configuration is company-specific — encoding their style guide, content structure, and change management preferences. Moving to a competitor means starting from scratch, not importing content.
+
+    **Churn prevention:** Monitor Agent PR acceptance rates. Consistent rejections mean the Agent is misconfigured and creating frustration rather than value — a leading churn signal CS should catch early. For Workflows, early adopters benefit from white-glove support; a customer who successfully sets up one Workflow typically sets up several, significantly deepening their investment in the platform.
+  </Accordion>
+
+  <Accordion title="AI Assistant (User-Facing)">
+    Once developers in a customer's ecosystem are accustomed to asking documentation questions conversationally and getting accurate, cited answers, that experience becomes tied to the brand of the documentation itself. Removing it is a regression in developer experience that creates internal political resistance to switching — particularly at companies where the AI Assistant is a visible, public-facing feature.
+
+    **Churn prevention:** Track the ratio of answered vs. unanswered AI queries. A high unanswered rate means the docs have gaps, and customers tend to blame the tool rather than the content. CS can proactively surface these gaps in analytics, turning a potential complaint into a collaborative improvement session.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 4. Engineering Resources vs. Enterprise Feature Urgency
+
+### Establishing a Shared Process — and Actually Solving Requests
+
+The first step is internal: align with the EPD team on how feature requests get evaluated before any specific ask is addressed. Without a shared process, every enterprise request becomes a one-off negotiation where CS is guessing at engineering capacity and product priorities.
+
+Concretely, this means establishing a standing monthly EPD sync with a shared feature request registry built directly from the prioritization signals collected by CS. The registry should capture:
+
+- The request in the customer's own words
+- Business context (ACV, renewal date, expansion blocker vs. nice-to-have)
+- Frequency weighted by revenue impact
+- Current EPD status
+
+This gives CS honest, consistent answers to take back to customers, and gives Product a structured commercial signal rather than a raw list of asks.
+
+<Note>
+  CS should take ownership of writing the initial feature spec — not the customer, and not EPD. CS is closest to the customer's language and use case context, and a well-scoped spec takes substantially less engineering time to evaluate and build than a vague one.
+</Note>
+
+The right motion is for CS to draft a spec, review it with the customer to confirm it reflects what they actually need (not just what they asked for initially), and then bring it to the EPD sync as a qualified, commercially-weighted request. This gives enterprise customers a sense of agency and responsiveness without creating unrealistic delivery expectations.
+
+Finally, CS should help enterprise customers distinguish between what genuinely requires a new Mintlify feature and what can be solved through configuration, documentation, or integration with other tools in their stack. In many cases, a 30-minute enablement session resolves what the customer assumed required engineering. When this happens consistently, it builds the trust needed to have honest conversations when Mintlify genuinely cannot deliver something on the customer's preferred timeline.
